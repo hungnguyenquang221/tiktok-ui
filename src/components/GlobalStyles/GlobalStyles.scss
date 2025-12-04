@@ -1,0 +1,14 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&family=Roboto:wdth@75..100&display=swap');
+:root{
+    --primary-color: #fe2c55;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    --primary-color: #fe2c55;
+    --font-family: 'Open Sans', sans-serif;
+    --font-family-alt: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
