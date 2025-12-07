@@ -13,7 +13,7 @@ function Header() {
     useEffect(() => {
         // fake API
         setTimeout(() => {
-            setSearchResult([1, 2, 3]);
+            setSearchResult([]);
         }, 0);
     }, []);
     return  <header className= {cx('wrapper')}>
