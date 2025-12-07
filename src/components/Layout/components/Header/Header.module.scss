@@ -19,17 +19,21 @@
 .logo{
     
 }
+.search,
+.search-input{
+    width: 361px;
+}
 .search{
     position: relative;
     display: flex;
-    width: 361px;
+    z-index: 1;
     height: var(--search-height);
     padding-left: 16px;
     background-color: rgba(22, 24, 35, 0.06);
     border-radius: var(--search-border-radius);
-    border: none;
+    border: 1px solid transparent;
     input {
-        flex:1;
+        flex: 1;
         height: 100%;
         color: var(--black);
         font-size: 1.6rem;
@@ -50,8 +54,13 @@
         background-color: rgba(22, 24, 35, 0.12);
     }
     &:focus-within{
-        border: none;
+        border-color: rgba(22, 24, 35, 0.2);
     }
+}
+.search-title{
+    padding: 5px 12px;
+    font-size: 1.4rem;
+    color: rgba(22, 24, 35, 0.5);
 }
 .clear,
 .loading{
@@ -76,4 +85,8 @@
     &::before{
         background-color: rgba(22, 24, 35, 0.06);
     }
+}
+
+.search-result {
+    width: 361px;
 }

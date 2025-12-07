@@ -30,3 +30,10 @@ a[href] {
     color: var(--text-color);
     text-decoration: none;
 }
+
+/* Tippy.js z-index fix - ensure dropdown appears above all content */
+.tippy-box[data-theme~=''],
+.tippy-box,
+.tippy-content {
+    z-index: 99999 !important;
+}
