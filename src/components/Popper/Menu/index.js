@@ -11,19 +11,21 @@ function Menu({ children, items = [] }) {
             <MenuItem key={index} data={item} />
         );
     };
-  <Tippy
-    interactive
-    delay={[0, 700]}
-    placement="bottom-end"
-    render={(attrs) => (
-      <div className={cx("menu-list")} tabIndex={-1} {...attrs}>
-        <PopperWrapper className={cx("menu-popper")}>
-          {renderItems()}
-        </PopperWrapper>
-      </div>
-    )}
-  >
-    {children}
-  </Tippy>;
+  return (
+    <Tippy
+      interactive
+      delay={[0, 700]}
+      placement="bottom-end"
+      render={(attrs) => (
+        <div className={cx("menu-list")} tabIndex={-1} {...attrs}>
+          <PopperWrapper className={cx("menu-popper")}>
+            {renderItems()}
+          </PopperWrapper>
+        </div>
+      )}
+    >
+      {children}
+    </Tippy>
+  );
 }
 export default Menu;

@@ -90,7 +90,7 @@ function Header() {
                 <Button text>Upload</Button>
                 <Button primary>Log in</Button>
                 <Menu
-                    items ={[MENU_ITEMS]}
+                    items ={MENU_ITEMS}
                 >
                     <button className={cx('more-btn')}>
                         <FontAwesomeIcon icon={faEllipsisVertical} />
