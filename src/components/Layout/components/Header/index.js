@@ -31,7 +31,6 @@ function Header() {
                         className={cx('search-result')} 
                         tabIndex={-1} 
                         {...attrs}
-                        style={{ zIndex: 99999 }}
                     >
                         <PopperWrapper>
                             <h4 className={cx('search-title')}>Accounts</h4>
