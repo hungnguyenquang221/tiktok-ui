@@ -48,6 +48,15 @@ function Header() {
             setSearchResult([]);
         }, 0);
     }, []);
+    const handleMenuChange = (menuItem) => {
+        switch (menuItem.type) {
+            case 'language':
+                // handle change language
+                console.log(menuItem);
+                break;
+            default:
+        }
+    }
     return  <header className= {cx('wrapper')}>
         <div className= {cx('inner')}>
             <img src= {images.logo} alt="Tiktok" />
@@ -90,7 +99,7 @@ function Header() {
                 <Button text>Upload</Button>
                 <Button primary>Log in</Button>
                 <Menu
-                    items ={MENU_ITEMS}
+                    items ={MENU_ITEMS} onChange={handleMenuChange}
                 >
                     <button className={cx('more-btn')}>
                         <FontAwesomeIcon icon={faEllipsisVertical} />
