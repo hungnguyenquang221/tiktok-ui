@@ -5,10 +5,11 @@ import { Wrapper as PopperWrapper } from "~/components/Popper";
 import MenuItem from "./MenuItem";
 import Header from "./Header";
 import { useState } from "react";
+import PropTypes from 'prop-types';
 const cx = classNames.bind(styles);
 
 
-function Menu({ children,hideOnClick = false, items = [], onChange,}) {
+function Menu({ children, hideOnClick = false, items = [], onChange,}) {
     const [history, setHistory] = useState([{ data: items }]);
     const current = history[history.length - 1];
     const renderItems = () => {
@@ -52,5 +53,11 @@ function Menu({ children,hideOnClick = false, items = [], onChange,}) {
       {children}
     </Tippy>
   );
+}
+Menu.propTypes = {
+  children: PropTypes.node.isRequired,
+  items: PropTypes.array,
+  hideOnClick : PropTypes.bool,
+  onChange: PropTypes.func,
 }
 export default Menu;
