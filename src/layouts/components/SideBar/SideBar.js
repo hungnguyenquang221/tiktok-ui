@@ -1,3 +1,4 @@
+import SuggestedAccounts from '~/components/SuggestedAccounts';
 import Menu from './Menu';
 import MenuItem from './Menu/MenuItem';
 import styles from './Sidebar.module.scss';
@@ -12,6 +13,8 @@ function SideBar() {
             <MenuItem title = "Following" to={config.routes.following} icon={<UserGroupIcon />} activeIcon={<UserGroupActiveIcon />}/>
             <MenuItem title = "Live" to={config.routes.live} icon ={<LiveIcon />} activeIcon={<LiveActiveIcon />}/>
         </Menu>
+        <SuggestedAccounts label={'Suggested Accounts'} />
+        <SuggestedAccounts label={'Following Accounts'} />
     </aside>;
 }
 export default SideBar;
