@@ -134,7 +134,7 @@ function Header() {
             {currentUser ? (
               <img
                 className={cx("user-avatar")}
-                src="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/f9ce554d025b4706351928dd399de887~tplv-tiktokx-cropcenter:720:720.jpeg?dr=14579&refresh_token=08db7a73&x-expires=1765166400&x-signature=SP4FwjysrM%2BCfrYq7I0t54DRlSg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=sg1"
+                src="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/f9ce554d025b4706351928dd399de887~tplv-tiktokx-cropcenter:720:720.jpeg?dr=14579&refresh_token=c86934b7&x-expires=1766203200&x-signature=KQ6MxKq9qF3fSTNaQgF%2FHNtf75Y%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=sg1"
                 alt="Nguyễn Hưng"
                 fallback="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/f9ce554d025b4706351928dd399de887~tplv-tiktokx-cropcenter:720:720.jpeg?dr=14579&refresh_token=7262fb98&x-expires=1765512000&x-signature=%2Fw7xO1kggM6wpNOX7QpZRwPonUI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=sg1"
               />
